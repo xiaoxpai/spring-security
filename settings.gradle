@@ -10,7 +10,8 @@ pluginManagement {
 
 plugins {
 	id "com.gradle.enterprise" version "3.8.1"
-	id "io.spring.ge.conventions" version "0.0.7"
+//	注释掉，这里需要授权验证
+//	id "io.spring.ge.conventions" version "0.0.7"
 }
 
 dependencyResolutionManagement {

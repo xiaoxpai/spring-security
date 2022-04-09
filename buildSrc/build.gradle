@@ -5,6 +5,7 @@ plugins {
 	id 'com.apollographql.apollo' version '2.4.5'
 }
 
+//兼容JDK11
 sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
