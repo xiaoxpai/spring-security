@@ -1,6 +1,9 @@
 apply plugin: "java-gradle-plugin"
 
 repositories {
+	//TODO 添加下载源
+	maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }    //添加阿里源
+	maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }  //添加阿里源
 	mavenCentral()
 }
 
@@ -18,7 +21,7 @@ dependencies {
 	compile 'net.sourceforge.saxon:saxon:9.1.0.8'
 }
 
-task ide(type: Copy)  {
+task ide(type: Copy) {
 	from configurations.runtime
 	into 'ide'
 }
